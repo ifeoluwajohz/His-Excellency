@@ -11,7 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Hamburger, HamburgerIcon, MenuIcon } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 
 export function SheetDemo() {
   return (

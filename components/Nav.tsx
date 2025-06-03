@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
-import { NavigationMenuDemo } from './desktopNav'
+import {NavigationMenuDemo} from './desktopNav'
 import { SheetDemo } from './mobileNav'
 
 const Nav = () => {
