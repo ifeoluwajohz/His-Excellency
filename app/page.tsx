@@ -3,7 +3,7 @@ import React from 'react'
 const HomePage = () => {
   return (
     <div>
-      <main>Home Page</main>
+      <main>Steve Olrunpomi</main>
     </div>
   )
 }
