@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   verification: {
-    google: "google-site-verification=your-verification-code",
+    google: "6iBoHYZLiLjxVDNFSW_rz9Vgq10x56-v-ENncastdBA",
     yandex: "yandex-verification=your-verification-code",
   },
   creator: "Steve Olorunpomi",
