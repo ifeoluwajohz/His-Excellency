@@ -87,7 +87,7 @@ export default function RootLayout({
       <body
         className={`${quicksand.className} ${lora.className} antialiased`}
       >
-        <div className="px-4 p-2 md:px-10">
+        <div className="px-6 p-2 md:px-20">
           <Nav />
           {children}
         </div>

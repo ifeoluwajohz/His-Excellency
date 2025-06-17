@@ -11,37 +11,56 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { MenuIcon } from "lucide-react"
+import { ContactIcon, HomeIcon, Info, MenuIcon, ServerCrashIcon } from "lucide-react"
+import Link from "next/link"
 
 export function SheetDemo() {
+
+
+  const Nav = [
+    {
+      id: 1,
+      url: "nkie",
+      name: "Home Page",
+      icon: HomeIcon
+    },
+    {
+      id: 2,
+      url: "nkie",
+      name: "About Page",
+      icon : Info
+    },{
+      id: 3,
+      url: "nkie",
+      name: "Contact Us",
+      icon : ContactIcon
+    },{
+      id: 4,
+      url: "nkie",
+      name: "Our Services",
+      icon: ServerCrashIcon
+    },
+  ]
   return (
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="secondary"><MenuIcon /></Button>
       </SheetTrigger>
       <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you&apos;re done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid flex-1 auto-rows-min gap-6 px-4">
-          <div className="grid gap-3">
-            <Label htmlFor="sheet-demo-name">Name</Label>
-            <Input id="sheet-demo-name" defaultValue="Pedro Duarte" />
-          </div>
-          <div className="grid gap-3">
-            <Label htmlFor="sheet-demo-username">Username</Label>
-            <Input id="sheet-demo-username" defaultValue="@peduarte" />
-          </div>
+        <div className="text-center ">
+          <p className="text-3xl mb-8">Steve Olorunpomi</p>
+
+          {Nav.map((nav, index) => (
+            <div key={index}>
+              <div className="flex justify-end items-center gap-x-8 gap-y-12 py-4 mr-8 hover:text-gray-600 animate-in transition-all ease-in-out">
+                <Link href={nav.url}>
+                  <p className="text-base ">{nav.name}</p>
+                </Link>
+                <nav.icon  className="w-5 h-5"/>
+              </div>
+            </div>
+          ))}
         </div>
-        <SheetFooter>
-          <Button type="submit">Save changes</Button>
-          <SheetClose asChild>
-            <Button variant="outline">Close</Button>
-          </SheetClose>
-        </SheetFooter>
       </SheetContent>
     </Sheet>
   )
