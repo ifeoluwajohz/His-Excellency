@@ -1,6 +1,5 @@
 ;import { Button } from '@/components/ui/button'
-import { Separator } from '@radix-ui/react-separator'
-import { CigaretteIcon, Construction, FlameIcon, FlameKindling, InspectIcon, KanbanSquareIcon, Loader, LucideAward, RailSymbolIcon, SearchX, SquareTerminalIcon, ThermometerSnowflake } from 'lucide-react'
+import { CigaretteIcon, Construction, Facebook, FlameKindling, InspectIcon, Instagram, KanbanSquareIcon, Loader, LucideAward, Mail, SearchX, Twitter } from 'lucide-react'
 import React from 'react'
 
 const HomePage = () => {
@@ -17,16 +16,19 @@ const HomePage = () => {
           <p className="md:text-4xl text-xl lg:py-4">Pastor Steve Olorunpomi</p>
           <p className="gray-500 text-lg">Trusted Legal Expertise</p>
           <p className="text-sm lg:text-left text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur hic in culpa dolores repellendus aut aperiam ratione sapiente odio a?</p>
-          <div className="social-icons">
+          <div className="social-icons flex">
             <a href="https://www.facebook.com/steve.olorunpomi" target="_blank" rel="noopener noreferrer">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZhY2Vib29rLWljb24gbHVjaWRlLWZhY2Vib29rIj48cGF0aCBkPSJNMTggMmgtM2E1IDUgMCAwIDAtNSA1djNIN3Y0aDN2OGg0di04aDNsMS00aC00VjdhMSAxIDAgMCAxIDEtMWgzeiIvPjwvc3ZnPg==" alt="Facebook" className="w-6 h-6 inline-block mr-2" />
+              <Facebook className="w-5 h-5 mr-2" />
             </a>
             
             <a href="https://www.instagram.com/steve.olorunpomi" target="_blank" rel="noopener noreferrer">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluc3RhZ3JhbS1pY29uIGx1Y2lkZS1pbnN0YWdyYW0iPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgeD0iMiIgeT0iMiIgcng9IjUiIHJ5PSI1Ii8+PHBhdGggZD0iTTE2IDExLjM3QTQgNCAwIDEgMSAxMi42MyA4IDQgNCAwIDAgMSAxNiAxMS4zN3oiLz48bGluZSB4MT0iMTcuNSIgeDI9IjE3LjUxIiB5MT0iNi41IiB5Mj0iNi41Ii8+PC9zdmc+" alt="Instagram" className="w-6 h-6 inline-block mr-2" />
+              <Instagram className="w-5 h-5 mr-2" />
             </a>
             <a href="https://www.twitter.com/steve_olorunpomi" target="_blank" rel="noopener noreferrer">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXR3aXR0ZXItaWNvbiBsdWNpZGUtdHdpdHRlciI+PHBhdGggZD0iTTIyIDRzLS43IDIuMS0yIDMuNGMxLjYgMTAtOS40IDE3LjMtMTggMTEuNiAyLjIuMSA0LjQtLjYgNi0yQzMgMTUuNS41IDkuNiAzIDVjMi4yIDIuNiA1LjYgNC4xIDkgNC0uOS00LjIgNC02LjYgNy0zLjggMS4xIDAgMy0xLjIgMy0xLjJ6Ii8+PC9zdmc+" alt="Twitter" className="w-6 h-6 inline-block mr-2" />
+              <Twitter className="w-5 h-5 mr-2" />
+            </a>
+            <a href="mail:ifeoluwajohz@gmail.com">
+              <Mail className="w-5 h-5 mr-2" />
             </a>
           </div>
           <Button className='bg-gray-900 text-white rounded-none w-full lg:max-w-xs'>Free Consultaion</Button>
